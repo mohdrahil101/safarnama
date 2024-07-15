@@ -1,0 +1,173 @@
+.home{
+    width:100%;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+
+
+    .overlay{
+        position:absolute;
+        height:100%;
+        width:100%;
+        background:rgba(0,0,0,0.3);
+        top:0;
+        bottom:0;
+        z-index:1; 
+    }
+    
+    video{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        bottom:0;
+        object-fit:cover;
+    }
+    .homeContent{
+        width:100%;
+        height:max-content;
+        padding:8rem 1.5rem 3rem;
+        display:flex;
+        row-gap: 3rem;
+        flex-direction:column;
+        align-items:stretch;
+        justify-content:center;
+        z-index:100;
+        color:white;
+        margin:auto;
+
+        .textDiv{
+            padding: 2rem 0;
+
+            .smallText{
+                font-size:14px;
+                text-transform: uppercase;
+
+            }
+                .homeTitle{
+                    position:relative;
+                    font-size:1.8rem;
+                    font-weight:560;
+                }
+        }
+
+        .cardDiv{
+            position:relative;
+            padding:2rem 1rem;
+            background-color: #fff;
+            border-radius:10px;
+            font-size:15px;
+            font-weight:500;
+
+            label{
+                display:block;
+                color:black;
+                padding-bottom:10px;
+                font-size:15px;
+                font-weight:500;
+            }
+
+            .label_total{
+                justify-content:space-between;
+                align-items:center;
+
+                .total{
+                    color:black;
+                    font-size:18px;
+                    padding-bottom:10px;
+                }
+            }
+            .input{
+                height:40px;
+                padding:0 1rem;
+                background-color:rgb(239,239,239);
+                border-radius:3rem;
+
+                input{
+                    background:none;
+                    border:none;
+                    outline:none;
+                    width:100%;
+                    font-size:15px;
+                    font-weight:500;
+                    color:black;
+                    &::placeholder{
+                        font-size:15px;
+                    }
+                }
+                .icon{
+                    font-size:18px;
+                    color:hsl(199,100%,33%) !important;
+                    margin-left:10px;
+                }
+                .input[type=range]{
+                    background:blue; 
+                }
+            }
+
+            .searchOptions{
+                position:absolute;
+                background: linear-gradient(to left, hsl(187,85%,43%), hsl(199,100%,33%));
+                width:max-content;
+                bottom:-1.4rem;
+                padding: 5px 1rem;
+                column-gap: .8rem;
+                border-radius:3rem;
+                left:50%;
+                transform:translate(-50%);
+                justify-content:center;
+                cursor:pointer;
+                
+
+                .icon{
+                    font-size: 20px;
+                }
+                span{
+                    font-size:18px;
+                }
+                &:hover{
+                    background:hsl(199,100%,33%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .home{
+        .homeContent{
+            padding: 14rem 1.5rem 3rem;
+            .textDiv{
+                .smallText{
+                    font-size: 16px;
+                }
+                
+                .homeTitle{
+                    position:relative;
+                    font-size:2.3rem;
+                    width:max-content;
+                    
+                }
+            }
+            .cardDiv{
+                grid-template-columns: repeat(1,1fr);
+                gap:1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:660px){
+    .home{
+        .homeContent{
+            padding: 14rem 1.5rem 3rem;
+            .cardDiv{
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3,1fr);
+                
+            }
+        }
+    }
+}

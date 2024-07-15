@@ -1,0 +1,125 @@
+.header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: hsl(0,0%,93%);
+    align-items:center;
+    justify-content:space-between;
+    padding: 1rem;
+    z-index:2000;
+    box-shadow: 0 2px 4px rgba(2,15,29,0.6);
+
+    .logo{
+        color:black;
+        font-size:20px;
+        font-weight:600;
+        cursor:pointer;
+        align-items:center;
+        justify-content:center;
+
+        .icon{
+            font-size:25px;
+            color: hsl(199,100%,33%);
+            transform:translateY(5px);
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .logo{
+            font-size:15px;
+        }
+        .navBar{
+            position:absolute;
+            padding:1rem;
+            background: hsl(0,0%,93%);
+            height:max-content;
+            width:80%;
+            border-radius:1rem;
+            top:-500rem;
+            left:50%;
+            transform:translate(-50%);
+            z-index:3000;
+            box-shadow: 0 2px 4px rgba(2,15,29,0.9);
+            transition: .5s ease-in-out;
+        
+        .navLists{
+            flex-direction:column;
+            justify-content:center;
+            width:100%;
+            margin:auto;
+            padding: .5rem 0;
+
+            .navItem{
+                padding: .5rem 0;
+
+                .navLink{
+                    font-size:.9rem;
+                    font-weight:560;
+                    
+                }
+            }
+    
+        .btn{
+            margin-top: 1rem;
+        }
+        }
+        .closeNavbar{
+            display:block;
+            position:absolute;
+            top:1rem;
+            right:1.5rem;
+            color: hsl(199,100%,33%);
+            &:hover{
+                color: hsl(187,85%,43%);
+                }
+
+            }
+        }
+        .activeNavbar{
+            top: 7rem;
+        }
+    } 
+    .toggleNavbar{
+        .icon{
+            font-size:25px;
+            color:hsl(199,100%,33%);
+        }
+    }
+
+}
+
+@media screen and (min-width:769px){
+    .toggleNavbar,.closeNavbar{
+        display:none;
+    }    
+
+    .header{
+        .navBar{
+            .navLists{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:row;
+
+                .navItem{
+                    .navLink{
+                        padding: 0 2rem;
+                        font-size: 1rem;
+                        font-weight:500;
+                        transition: .3s ease;
+                        &:hover{
+                            color:hsl(187,85%,43%);
+                        }
+                    }
+                }
+                .btn{
+                    margin-left:1rem;
+                    a{
+                        color:white;
+                        font-weight:500;
+                    }
+                }
+            }
+        }
+    }
+} 

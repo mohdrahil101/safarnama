@@ -1,0 +1,73 @@
+.contact{
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    .contactVideo{
+        position:absolute;
+        height:100%;
+        width:100%;
+        video{
+            position:fixed;
+            min-height:100%;
+            min-width:100%;
+            object-fit:cover;
+        }
+    }
+    .contactBox{
+        padding:4rem 4rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;    
+        margin:12rem 2rem 0 2rem;
+        border-radius:3rem;
+        z-index:100;
+        color: #fff;
+        background:rgba(0,0,0,0.5);
+        backdrop-filter:blur(4px);
+        font-size: 1.2rem;
+
+        input{
+            padding:.3rem;
+            background:none;
+            border: 1px #fff solid;
+            border-radius: 2rem;
+            outline:none;
+            margin:.8rem;
+
+            &::placeholder{
+                color:#fff;
+                opacity: .4;
+            }
+        }
+        .btn{
+            margin-top: 1.2rem;
+            font-size:18px;
+            font-weight:500;
+        }
+        .icon{
+            font-size:20px;
+            padding-left:.2rem;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .contact{
+        .contactBox{
+            padding: 1rem;
+            margin: 10rem 2rem 0 2rem;
+            border-radius:2rem;
+        }
+
+        input{
+            font-size:16px;
+        }
+        .btn{
+            font-size:12px;
+        }
+    }
+}
