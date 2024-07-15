@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/safarnama/static/css/main.ccb742d5.css",
+    "main.js": "/safarnama/static/js/main.43f9b217.js",
+    "static/js/453.743843fe.chunk.js": "/safarnama/static/js/453.743843fe.chunk.js",
+    "static/media/bg.mp4": "/safarnama/static/media/bg.6a32645ebd9d4e51eb31.mp4",
+    "static/media/paris.jpg": "/safarnama/static/media/paris.751a9f22f5168bda1aed.jpg",
+    "static/media/bali.jpg": "/safarnama/static/media/bali.42f7e63a4c59c1b958ad.jpg",
+    "static/media/istanbul.jpg": "/safarnama/static/media/istanbul.5ca2713d9b770a33c816.jpg",
+    "static/media/dubai.jpg": "/safarnama/static/media/dubai.2280b7fcb84d3a05c2d9.jpg",
+    "static/media/rome.jpg": "/safarnama/static/media/rome.cf11b22448aab678de54.jpg",
+    "static/media/kashmir.jpg": "/safarnama/static/media/kashmir.74bc0fff13b076073436.jpg",
+    "index.html": "/safarnama/index.html",
+    "main.ccb742d5.css.map": "/safarnama/static/css/main.ccb742d5.css.map",
+    "main.43f9b217.js.map": "/safarnama/static/js/main.43f9b217.js.map",
+    "453.743843fe.chunk.js.map": "/safarnama/static/js/453.743843fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccb742d5.css",
+    "static/js/main.43f9b217.js"
+  ]
+}
