@@ -1,3 +1,16 @@
+<h2 align="center">safarnama | Travel Made Easy!</h2>
+<div align="center">
+<p>A complete responsive travel website built using React JS and Tailwind CSS.</p>
+<a href="https://safarnama-react.vercel.app" target="_blank"><strong>➥ Live Demo</strong></a>
+</div> <br/><br/>
+<b>Screenshots:</b> <br/><br/>
+<img src="https://github.com/mohdrahil101/safarnama/blob/main/readme.jpg"></img>
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
